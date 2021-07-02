@@ -1,0 +1,255 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#header{
+    /* background-color: #6da9ed; */
+    background-color: #2e64a1;
+}
+
+#header__logo{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 15px 0px 30px 0;
+}
+
+#header__logo h1{
+    font-size: 35px;
+    font-weight: 100;
+    font-style: italic;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+#header__logo #h1-x{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+#nav{
+    background-color: #6da9ed;
+}
+
+#nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 50%;
+}
+
+#nav ul li{
+    flex-grow: 1;
+    
+} 
+
+#nav ul li a{
+    text-align: center;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: all 300ms;
+    padding: 14px 20px;
+}
+
+#nav ul li a.activo{
+    background-color: #4c76a5;
+}
+
+#nav ul li a:hover{
+    background-color: #4c76a5;
+}
+
+#footer{
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+#home-img{
+    margin-top: 20px;
+}
+
+.avioncito{
+    width: 100%;
+}
+
+.columnas h2{
+    font-weight: 400;
+    color: #2e64a1;
+    margin: 20px 0 16px;
+    font-size: 25px;
+}
+
+.columnas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bienvenidos{
+    flex-basis: 60%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-right: 20px;
+}
+
+.bienvenidos p{
+    margin-bottom: 15px;
+}
+
+.testimonios{
+    flex-basis: 30%;
+    flex-grow: 1;
+}
+
+.testimonio{
+    background-color: #ccc;
+    padding: 16px;
+}
+
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    width: 60%;
+    display: block;
+}
+
+.testimonio .autor{
+    font-size: 14px;
+    text-align: center;
+    margin: 16px 0;
+    display: block;
+}
+
+.testimonio .autor>a{
+    text-decoration: none;
+}
+
+.contenedor{
+    width:80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+@media (max-width:1182px){
+    #nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width:939px){
+    .columnas{
+        flex-direction: column;
+    }
+    .bienvenidos{
+        padding-right: 0;
+    }
+}
+
+@media (max-width:472px){
+    #header__logo{
+        flex-direction: column;
+    }
+    .logo__transportex {
+        margin: 0 auto;
+    }
+    #header__logo h1{
+        margin-left: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+}
+
+ /*Nosotros estilos*/
+
+#historia__title{ 
+    font-weight: 400;
+    color: #2e64a1;
+    margin: 30px 0 25px;
+    font-size: 30px;
+}
+
+.historia p{
+    margin-bottom: 20px;
+    font-size: 17px;
+    /* font-size: 13px; con ese valor el texto no es acessible*/
+}
+
+#staff__title{
+    font-weight: 400;
+    color: #2e64a1;
+    margin: 30px 0 25px;
+    font-size: 30px;
+}
+
+#staff__container-people{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-people__person{
+    
+    flex-basis: 200px; /*cambiar por flex basis??*/
+    flex-shrink: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 3px #444;
+    box-sizing: border-box;
+    text-align: center;
+    
+    /* flex-grow: 1; */
+    margin-bottom: 10px;
+}
+
+.container-people__person>img{
+    width: 90%;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin: 16px 0 10px;
+}
+
+.person__name{
+    color: #2e64a1;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.person__position{
+    color: #2e64a1;
+    margin: 6px 0 0;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.person__text{
+    margin-top: 5px;
+    padding: 0 7px 7px;
+    line-height: 28px;
+    font-size: 13px;
+}
+
+@media (max-width:499px){
+    .container-people__person{
+        flex-grow: 1;
+    }
+
+    .container-people__person>img{
+        width: 42.5%;
+    } 
+} 
